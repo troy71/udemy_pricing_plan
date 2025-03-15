@@ -1,0 +1,76 @@
+body {
+  font-family: "Sono", sans-serif;
+  background-color: #5c5959;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 2rem;
+}
+
+.pricing-plan {
+  flex: 1; /* Ensure all pricing plans have the same size */
+  max-width: 400px; /* Optional: Set a max-width to control the size */
+  padding: 20px;
+  background-color: #a39d9d;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.plan-features {
+  margin-bottom: 20px;
+}
+
+.plan-title {
+  font-size: 1rem;
+  font-weight: bold;
+
+}
+
+.plan-price {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px 0; /* Add padding for top and bottom only */
+}
+
+.plan-features {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-features li {
+  margin-bottom: 10px;
+}
+
+.plan-button {
+  background-color: #e3ab4b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.plan-button:hover {
+  background-color: #d18e2b; /* Change to desired hover color */
+}
+
+/* Hint: What can you do with a media query and flexbox? */
+@media (max-width: 1250px) {
+  .pricing-container {
+    flex-direction: column;
+    height: 100%;
+  }
+  .pricing-plan {
+    width: 100vh;
+  }
+
+   /* when hover is supported */
+   .plan-button:hover {
+    background-color: #d18e2b; /* Change to desired hover color */
+  }
+}
